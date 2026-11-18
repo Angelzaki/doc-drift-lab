@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doc-drift-lab"
+version = "0.1.0"
+description = "Detecta drift de retrieval cuando el corpus cambia"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Angel Salazar" }]
+dependencies = ["pytest>=8.0.0", "rich>=13.7.0"]
+
+[project.scripts]
+doc-drift = "doc_drift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

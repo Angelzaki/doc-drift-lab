@@ -1,0 +1,2 @@
+Requisitos del producto A2
+A2 requiere autenticación SSO corporativo y MFA obligatorio.
